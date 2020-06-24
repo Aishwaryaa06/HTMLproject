@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form page</title>
+	<meta charset="UTF-8">
+	<style>
+	table{
+	border-collapse:collapse;
+	}
+	</style>
+</head>
+<body>
+<form name="contactform" action="send.php" method="post">
+<table width="600" border="1" cellspacing="2"cellpadding="2">
+	<tr>
+	<td>EMPLOYMENT APPLICATION</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td>First Name:</td>
+	<td><input type="text" name="fname" max-length="50"></td>
+	</tr>
+	<tr>
+	<td>Last Name:</td>
+	<td><input type="text" name="fname" max-length="50"></td>
+	</tr>
+	<tr>
+	<td>Position:</td>
+	<td>
+	<select name="position">
+		<option value="AC">ACCOUNTANT</option>
+		<option value="RC">RECEPTIONIST</option>
+		<option value="AS">ASSISTANT</option>
+		<option value="CL">CLERK</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td>Experience:</td>
+	<td>
+	<select name="experience">
+		<option value="TR">3 YRS</option>
+		<option value="TW">2 YRS</option>
+		<option value="ON">1 YR</option>
+		<option value="FR">FRESHER</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td>JOB TYPE:</td>
+	<td>
+	<input type="checkbox" value="ft">Full Time
+	<input type="checkbox" value="pt">Part Time
+	<input type="checkbox" value="ct">Contract
+	</td>
+	</tr>
+	<tr>
+	<td>EMPLOYMENT STATUS:</td>
+	<td>
+	<input type="radio" name="estatus" value="em">EMPLOYER
+	<input type="radio" name="estatus" value="st">STUDENT
+	<input type="radio" name="estatus" value="um">UMEMPLOYED
+	</td>
+	</tr>
+	<tr>
+	<td>Additional Comments:</td>
+	<td>
+	<textarea name="comments" cols="45" rows="5"></textarea>
+	</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" name="submit" value="Submit">
+	<input type="reset" name="reset" value="Reset">
+	</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
